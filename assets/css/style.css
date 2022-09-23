@@ -8,17 +8,29 @@ html{
     line-height: 1.5;
 }
 /* comon */
+.col{
+    margin: 0 3px;
+}
+.col-five{
+    width: 17%;
+    border: 2px dashed #ccc;
+}
+:root{
+    --text-color-red:rgb(252, 73, 73);
+    --text-color-green:rgb(59, 209, 59);
+}
 .clear{
     clear: both;
-    content: "";
+    content:"";
     display: block;
 }
 /* header */
+
 #header .logo{
     background: url(../images/Banner.jpg) top center/cover no-repeat;
     padding-top: 10%;
 }
-#header .menu{
+#header #menu{
     height: 46px;
     background: linear-gradient(180deg, rgb(167, 167, 167), #000);
 }
@@ -68,8 +80,7 @@ html{
     color: #000;
     text-transform:capitalize;
 }
-
-.menu .search-btn{
+#menu .search-btn{
     float: right;
     line-height: 46px;
     padding: 0 16px;
@@ -77,22 +88,91 @@ html{
 .search-btn .btn-search-icon{
     color: #fff;
     font-size: 18px;
-
+    
 }
 .search-btn:hover{
     background: rgb(251, 76, 76);
     cursor: pointer;
 }
+.nav .subnav{
+    z-index: 1;
+}
 
 /* slider */
 #slider {
+    
     padding-top: 32%;
     background:url(../images/Slide.jpg) top center /contain no-repeat;
     position: relative;
 }
 #slider .text-content{
     position: absolute;
+    bottom: 47px;
+    color: #fff;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+.text-heading{
+    letter-spacing: 40px;
+    font-size: 30px;
+    text-shadow: 0px 5px 4px rgb(0, 0, 0);
 }
 
 
 /* content */
+#content .content-heading{
+    background-color: rgb(83, 83, 83);
+    color: #fff;
+    padding: 8px 0 8px 20px;
+    margin:10px 0 ;
+    font-size: 18px;
+}
+#content .content-list{
+    display: flex;
+    justify-content: space-around;
+}
+#content .content-img{
+    width: 100%;
+}
+.content-list .content-value{
+    text-decoration: line-through;
+}
+.col-five .content-item{
+    text-align: center;
+    padding: 0 5px;
+}
+.content-item .content-such-value{
+    color: var(--text-color-green);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.content-item .content-value{
+    text-transform: uppercase;
+}
+.content-item .btn-purchase{
+    color: var(--text-color-red);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 0;
+    font-size: 18px;
+}
+.content-item .purchase{
+    display: flex;
+    justify-content: space-around;
+}
+.content-item .btn-purchase:hover{
+    opacity: 0.7;
+}
+#footer{
+    margin-top: 10px;
+    text-align: center;
+    padding: 8px 0;
+    background-color: rgb(126, 124, 124);
+}
+#footer .footer-end{
+    color:#fff
+}
+#footer .font-bold{
+    font-weight: bold;
+}
